@@ -1,8 +1,9 @@
-var newsPile = angular.module('newsPile', ['ui.router']);
+var newsSite = angular.module('newsSite', ['ui.router']);
 
-newsPile.config(function($stateProvider) {
+newsSite.config(function($stateProvider) {
   $stateProvider.state('home', {
     url: "",
     templateUrl: "partials/home.html"
   });
+
 });
