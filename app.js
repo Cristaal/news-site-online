@@ -7,9 +7,15 @@ newsSite.config(function($stateProvider) {
   });
 
   $stateProvider.state('titles', {
-    url: "/headlines",
-    templateUrl: "partials/headlines.html",
+    url: "/titles",
+    templateUrl: "partials/titles.html",
     controller: 'TitlesCtrl'
+  });
+
+  $stateProvider.state('titles.comments', {
+    url: "/:titleId"
+    templateUrl: "partials/titles.comments.html"
+    controller: 'CommentsCtrl'
   });
 
 });
