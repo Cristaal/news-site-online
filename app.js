@@ -13,8 +13,8 @@ newsSite.config(function($stateProvider) {
   });
 
   $stateProvider.state('titles.comments', {
-    url: "/:titleId"
-    templateUrl: "partials/titles.comments.html"
+    url: "/:titleId",
+    templateUrl: "partials/titles.comments.html",
     controller: 'CommentsCtrl'
   });
 

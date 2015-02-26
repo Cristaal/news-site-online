@@ -2,7 +2,7 @@
   <h1>Here are your titles</h1>
   <ul>
     <li ng-repeat="item in titles">
-    <a> {{ item.title }} </a>
+    <a ui-sref="titles.comments({ titleId: item.id })">{{ item.name }}</a>
     </li>
   </ul>
 </div>
