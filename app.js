@@ -6,4 +6,10 @@ newsSite.config(function($stateProvider) {
     templateUrl: "partials/home.html"
   });
 
+  $stateProvider.state('titles', {
+    url: "/headlines",
+    templateUrl: "partials/headlines.html",
+    controller: 'TitlesCtrl'
+  });
+
 });
