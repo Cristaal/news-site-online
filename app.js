@@ -1,13 +1,13 @@
 var newsSite = angular.module('newsSite', ['ui.router']);
 
 newsSite.config(function($stateProvider) {
-  $stateProvider.state('home', {
-    url: "",
-    templateUrl: "partials/home.html"
-  });
+  // $stateProvider.state('home', {
+  //   url: "",
+  //   templateUrl: "partials/home.html"
+  // });
 
   $stateProvider.state('titles', {
-    url: "/titles",
+    url: "",
     templateUrl: "partials/titles.html",
     controller: 'TitlesCtrl'
   });
@@ -17,5 +17,7 @@ newsSite.config(function($stateProvider) {
     templateUrl: "partials/titles.comments.html",
     controller: 'CommentsCtrl'
   });
+
+  
 
 });
