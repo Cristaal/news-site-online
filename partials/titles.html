@@ -6,7 +6,9 @@
   <h1>Here are your titles</h1>
   <ul>
     <li ng-repeat="item in titles">
-      <a href="item.storyTitle({ titleId: item.id })"><span ng-bind-html="item.name"></span></a>
+      <a href="({ title.url })" ng-bind-html="item.name"></a>
+        <span ng-click="upVote()" class="btn btn-success"></span>
+        <span ng-click="downVote()" class="btn btn-danger"></span>
     </li>
   </ul>
 </div>

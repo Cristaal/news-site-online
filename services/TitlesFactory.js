@@ -3,7 +3,6 @@ newsSite.factory('TitlesFactory', function TitlesFactory($sce) {
   factory.titles = [];
 
   factory.addTitle = function() {
-    debugger;
     factory.titles.push({
       name: $sce.trustAsHtml(factory.storyTitle),
       id: factory.titles.length + 1,

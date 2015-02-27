@@ -1,12 +1,8 @@
 var newsSite = angular.module('newsSite', ['ui.router']);
 
 newsSite.config(function($stateProvider) {
-  // $stateProvider.state('home', {
-  //   url: "",
-  //   templateUrl: "partials/home.html"
-  // });
 
-  $stateProvider.state('titles', {
+  $stateProvider.state('home', {
     url: "",
     templateUrl: "partials/titles.html",
     controller: 'TitlesCtrl'
@@ -18,6 +14,6 @@ newsSite.config(function($stateProvider) {
     controller: 'CommentsCtrl'
   });
 
-  
+
 
 });
