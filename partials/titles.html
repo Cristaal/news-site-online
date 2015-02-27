@@ -3,13 +3,13 @@
 </br>
 
 <div ng-show="titles.length">
-  <h1>Here are your titles</h1>
+  <h1>Featured Articles</h1>
   <ul>
     <li ng-repeat="item in titles | orderBy:'-vote'">
       <a href="({ title.url })" ng-bind-html="item.name"></a> {{item.vote}} </br>
         <button ng-click="upVote(item)" class="btn btn-success">Vote Up</button>
         <button ng-click="downVote(item)" class="btn btn-danger">Vote Down</button>
-        <a ui-sref="comments({ titleId: item_id })"><button class="btn btn-info">Add Comment</button></a>
+        <a ui-sref="comments({ titleId: item.id })"><button class="btn btn-info">Add Comment</button></a>
     </li>
   </ul>
 </div>

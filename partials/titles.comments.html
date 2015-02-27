@@ -1,23 +1,14 @@
 
-
-<div ng-show="title.comments.length">
-  <h2>Comments for {{ name.title }}</h2>
-  <ul>
-    <li ng-repeat="item in title.comments">
-      {{item.title}}
-    </li>
-  </ul>
-</div>
-
-
-
-
+<li ng-repeat="item in title.comments">
+  {{ item.comment }}
+</li>
 
   <h2>Add a comment to {{ title.name }}</h2>
   <form ng-submit="addComment()" class="form-inline" role="form">
     <div class="form-group">
-      <input type="text" ng-model="enteredComment" class="form-control" placeholder="Add Comment">
+      <textarea cols="50" rows-"4" ng-model="title.comment" class="form-control" placeholder="Add Comment"></textarea>
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>
+<a href='/'>Click here to go to the main page</a>
